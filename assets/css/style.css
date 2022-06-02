@@ -368,5 +368,111 @@ html {
 
 body {
   font-family: "Graphik LCG", sans-serif;
+  font-weight: 400;
   font-style: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.container {
+  max-width: 1380px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.btn {
+  min-width: 120px;
+  min-height: 45px;
+  border-radius: 0;
+  font-weight: 600;
+}
+
+.btn-light {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #000000;
+}
+
+.btn-accent {
+  background-color: #ff6336;
+  border: none;
+  color: #ffffff;
+}
+
+header {
+  background-color: #ffffff;
+}
+
+.header-menu {
+  padding-top: calc(20px * 1.5);
+  padding-bottom: calc(20px * 1.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-navbar {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.header-navbar-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: calc(20px / 2);
+}
+
+.header-content {
+  display: grid;
+  grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
+  grid-template-columns: 620px 1fr;
+  padding-top: 100px;
+  padding-bottom: 160px;
+}
+
+.header-content-title {
+  grid-area: ttl;
+}
+
+.header-content-description {
+  grid-area: dsc;
+}
+
+.header-content-actions {
+  grid-area: act;
+}
+
+.header-content-notes {
+  grid-area: nts;
+}
+
+.header-content-image {
+  grid-area: img;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.main {
+  background-color: #ff6336;
+  min-height: 200px;
 }
