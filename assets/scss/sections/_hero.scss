@@ -1,0 +1,35 @@
+.hero{
+  display: grid;
+  grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
+  grid-template-columns: 620px 1fr;
+  padding-top: 100px;
+  padding-bottom: 160px;
+  align-items: center;
+}
+
+.hero-title {
+  grid-area: ttl;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 1.08;
+}
+
+.hero-description {
+  grid-area: dsc;
+}
+
+.hero-actions {
+  grid-area: act;
+}
+
+.hero-notes {
+  grid-area: nts;
+}
+
+.hero-image-container {
+  grid-area: img;
+}
+
+.hero-image {
+  width: 100%;
+}

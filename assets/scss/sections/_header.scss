@@ -1,5 +1,10 @@
 header {
-  background-color: $color-white;
+  background-color: $color-bg-header;
+  border-bottom: 1px solid $color-header-line;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
 }
 
 .header-menu {
@@ -19,36 +24,4 @@ header {
 .header-navbar-actions {
   display: flex;
   gap: $gap-sm;
-}
-
-.header-content {
-  display: grid;
-  grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
-  grid-template-columns: 620px 1fr;
-  padding-top: 100px;
-  padding-bottom: 160px;
-}
-
-.header-content-title {
-  grid-area: ttl;
-}
-
-.header-content-description {
-  grid-area: dsc;
-}
-
-.header-content-actions {
-  grid-area: act;
-}
-
-.header-content-notes {
-  grid-area: nts;
-}
-
-.header-content-image {
-  grid-area: img;
-}
-
-.hero-image {
-  width: 100%;
 }

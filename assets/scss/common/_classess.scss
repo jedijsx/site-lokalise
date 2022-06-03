@@ -13,13 +13,13 @@
 }
 
 .btn-light {
-  background-color: $color-light;
-  border: 1px solid rgba($color-black, 0.5); 
-  color: $color-black;
+  background-color: $color-btn-light;
+  border: 1px solid rgba($color-btn-dark, 0.5); 
+  color: $color-txt-primary;
 }
 
 .btn-accent {
-  background-color: $color-accent;
+  background-color: $color-btn-accent;
   border: none;
-  color: $color-white;
+  color: $color-txt-secondary;
 }
