@@ -1,13 +1,15 @@
 .container {
-  max-width: $xl;
+  max-width: $xxl;
   padding-left: $gap;
   padding-right: $gap;
   margin: 0 auto;
 }
 
 .btn {
-  min-width: 120px;
-  min-height: 45px;
+  display: block;
+  padding: 0.5em 1em;
+  height: 60px;
+  min-width: 160px;
   border-radius: 0;
   font-weight: 600;
 }
@@ -23,3 +25,4 @@
   border: none;
   color: $color-txt-secondary;
 }
+

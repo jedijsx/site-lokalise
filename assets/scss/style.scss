@@ -3,10 +3,12 @@
 @import "presets/skins";
 @import "presets/variables";
 
+@import "mixins";
+
 @import "common/fonts";
 @import "common/typography";
 @import "common/classess";
 
 @import "sections/header";
 @import "sections/main";
-@import "sections/hero"
+@import "sections/hero";

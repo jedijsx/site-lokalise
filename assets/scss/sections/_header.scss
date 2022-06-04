@@ -13,15 +13,24 @@ header {
   display: flex;
   column-gap: 50px;
   align-items: center;
-}
 
-.header-navbar {
-  flex-grow: 1;
-  display: flex;
-  column-gap: 50px;
-}
+  &-navbar {
+    flex-grow: 1;
+    display: flex;
+    column-gap: 50px;
+  }
 
-.header-navbar-actions {
-  display: flex;
-  gap: $gap-sm;
+  &-actions {
+    display: flex;
+    gap: $gap-sm;
+  }
+
+  &-btn {
+    display: block;
+    padding: 0.2em;
+    height: 45px;
+    min-width: 120px;
+    border-radius: 0;
+    font-weight: 600;
+  }
 }
