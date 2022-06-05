@@ -18,7 +18,7 @@
 
   @include lg {
     grid-template-columns: 1fr;
-    grid-template-areas: "ttl" "dsc" "img" "act" "nts";
+    grid-template-areas: "ttl""dsc""img""act""nts";
     justify-items: center;
     padding-top: 56px;
     padding-bottom: 56px;
@@ -33,7 +33,7 @@
     @include xl-min {
       font-size: 65px;
     }
-        
+
     @include xl-lg {
       font-size: 56px;
     }
@@ -43,11 +43,6 @@
       max-width: 600px;
       text-align: center;
     }
-
-    // @include lg-md {
-    //   text-align: center;
-    //   font-size: 32px;
-    // }
   }
 
   &-description {
@@ -58,9 +53,8 @@
 
     @include xl-min {
       font-size: 25px;
-      // max-width: 470px;
-
     }
+
     @include xl {
       font-size: 20px;
       max-width: 400px;
@@ -92,12 +86,12 @@
 
   &-image-item {
     @include lg-min {
-      width: 100%;  
+      width: 100%;
     }
 
     @include lg {
       width: 50%;
-      margin-bottom: 40px;  
+      margin-bottom: 40px;
     }
   }
 }
