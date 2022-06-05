@@ -1,3 +1,7 @@
+//thanks github.com/Alecto for mixins
+
+$diff: 0.2px;
+
 /* xl */
 @mixin xl-min {
   @media (min-width: $xl) {

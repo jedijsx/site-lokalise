@@ -18,6 +18,11 @@ header {
     flex-grow: 1;
     display: flex;
     column-gap: 50px;
+
+  @include xl {
+    display: none;
+  }
+
   }
 
   &-actions {

@@ -1,18 +1,27 @@
 .hero {
   display: grid;
   grid-template-areas: "ttl img""dsc img""act img""nts img";
-  grid-template-columns: 550px 1fr;
   row-gap: 20px;
-  padding-top: 130px;
-  padding-bottom: 160px;
   align-items: center;
-  
+
   @include xl-min {
-    grid-template-columns: 580px 1fr;
+    grid-template-columns: 550px 1fr;
+    padding-top: 130px;
+    padding-bottom: 160px;
   }
 
-  @include xl {
-    grid-template-columns: 40% 1fr;
+  @include xl-lg {
+    grid-template-columns: 50% 1fr;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @include lg {
+    grid-template-columns: 1fr;
+    grid-template-areas: "ttl" "dsc" "img" "act" "nts";
+    justify-items: center;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 
   &-title {
@@ -20,24 +29,47 @@
     font-weight: 600;
     line-height: 1.08;
     margin: 0;
-    font-size: 65px;
+
+    @include xl-min {
+      font-size: 65px;
+    }
         
-    @include xl {
+    @include xl-lg {
       font-size: 56px;
     }
 
+    @include lg {
+      font-size: 40px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    // @include lg-md {
+    //   text-align: center;
+    //   font-size: 32px;
+    // }
   }
 
   &-description {
     grid-area: dsc;
     padding-top: $gap-lg;
     padding-bottom: $gap-lg;
-    font-size: 25px;
     line-height: 1.4;
-    max-width: 470px;
 
+    @include xl-min {
+      font-size: 25px;
+      // max-width: 470px;
+
+    }
     @include xl {
       font-size: 20px;
+      max-width: 400px;
+    }
+
+    @include lg {
+      font-size: 18px;
+      max-width: 470px;
+      text-align: center;
     }
   }
 
@@ -55,9 +87,17 @@
     grid-area: img;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   &-image-item {
-    width: 100%;
+    @include lg-min {
+      width: 100%;  
+    }
+
+    @include lg {
+      width: 50%;
+      margin-bottom: 40px;  
+    }
   }
 }
