@@ -13,4 +13,26 @@
   @include lg {
     display: none;
   }
+
+  &-link {
+    @include lg {
+      padding: 0.5em;
+    }
+  }
+
+  &.active {
+    display: block;
+    position: absolute;
+    top: 0;
+    padding: 105px 20px 100px 20px;
+    background-color: $color-bg-main;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-lg;
+    width: 200px;
+    right: 0;
+    text-align: right;
+    height: 100vh;
+    box-shadow: 0 0 16px rgba($color-btn-dark, 0.25);    
+  }
 }

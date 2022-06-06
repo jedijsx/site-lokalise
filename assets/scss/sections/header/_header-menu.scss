@@ -3,6 +3,7 @@
   padding-bottom: $gap-lg;
   display: flex;
   align-items: center;
+  min-height: 105px;
 
   @include xl-min {
     column-gap: 50px;
@@ -14,5 +15,11 @@
 
   @include xl-lg {
     column-gap: $gap;
+  }
+
+  @include sm {
+    padding-top: $gap;
+    padding-bottom: $gap;
+    min-height: 68px;
   }
 }

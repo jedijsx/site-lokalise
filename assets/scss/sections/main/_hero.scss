@@ -1,6 +1,6 @@
 .hero {
   display: grid;
-  grid-template-areas: "ttl img""dsc img""act img""nts img";
+  grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
   row-gap: 20px;
   align-items: center;
 
@@ -18,10 +18,15 @@
 
   @include lg {
     grid-template-columns: 1fr;
-    grid-template-areas: "ttl""dsc""img""act""nts";
+    grid-template-areas: "ttl" "dsc" "img" "act" "nts";
     justify-items: center;
     padding-top: 56px;
     padding-bottom: 56px;
+  }
+
+  @include sm {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   &-title {
@@ -65,16 +70,36 @@
       max-width: 470px;
       text-align: center;
     }
+
+    @include sm {
+      padding-top: $gap-sm;
+      padding-bottom: $gap-sm;
+    }
   }
 
   &-actions {
     grid-area: act;
     display: flex;
     column-gap: $gap-sm;
+
+    @include sm {
+      flex-direction: column;
+      gap: $gap-sm;
+    }
+
+    &-btn {
+      @include sm {
+        min-width: 320px;
+      }
+    }
   }
 
   &-notes {
     grid-area: nts;
+
+    @include sm {
+      text-align: center;
+    }
   }
 
   &-image-container {

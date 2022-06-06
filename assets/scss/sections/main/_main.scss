@@ -1,4 +1,8 @@
 .main {
   padding-top: 105px;
   background-color: $color-bg-main;
+
+  @include sm {
+    padding-top: 68px;
+  }
 }
