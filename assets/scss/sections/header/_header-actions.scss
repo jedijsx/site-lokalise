@@ -1,0 +1,77 @@
+.header-menu-actions {
+  display: flex;
+  gap: $gap-sm;
+  align-items: center;
+
+  &-hamburger {
+    width: 30px;
+    height: 22.5px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  
+    &-row {
+      display: none;
+      height: 3px;
+      width: 100%;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+  
+      @include lg {
+        display: block;
+        position: absolute;
+      }
+
+      &:nth-child(1) {
+        top: 0px;
+        background-color: #a4a14a;
+      }
+    
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 9px;
+        background-color: #ffc500;
+      }
+    
+      &:nth-child(4) {
+        top: 18px;
+        background-color: #ff6336;
+      }
+    }
+    
+    &.open span {
+      &:nth-child(1) {
+        top: 9px;
+        width: 0%;
+        left: 50%;
+      }
+  
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+  
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+  
+      &:nth-child(4) {
+        top: 9px;
+        width: 0%;
+        left: 50%;
+      }
+    }
+  }
+
+  &-btn {
+    display: block;
+    padding: 0.2em;
+    height: 45px;
+    min-width: 120px;
+    border-radius: 0;
+    font-weight: 600;
+  }
+}
+

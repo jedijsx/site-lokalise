@@ -1,0 +1,8 @@
+header {
+  background-color: $color-bg-header;
+  border-bottom: 1px solid $color-header-line;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+}

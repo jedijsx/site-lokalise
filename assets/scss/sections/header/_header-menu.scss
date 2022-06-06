@@ -1,0 +1,18 @@
+.header-menu {
+  padding-top: $gap-lg;
+  padding-bottom: $gap-lg;
+  display: flex;
+  align-items: center;
+
+  @include xl-min {
+    column-gap: 50px;
+  }
+
+  @include xl {
+    justify-content: space-between;
+  }
+
+  @include xl-lg {
+    column-gap: $gap;
+  }
+}

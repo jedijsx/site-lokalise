@@ -1,0 +1,16 @@
+.header-menu-navbar {
+  flex-grow: 1;
+  display: flex;
+
+  @include xl-min {
+    column-gap: 60px;
+  }
+
+  @include xl-lg {
+    column-gap: $gap;
+  }
+
+  @include lg {
+    display: none;
+  }
+}
