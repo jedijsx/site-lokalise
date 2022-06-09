@@ -1,3 +1,6 @@
+@use "../../mixins" as *;
+@use "../../presets/" as *;
+
 .hero {
   display: grid;
   grid-template-areas: "ttl img" "dsc img" "act img" "nts img";

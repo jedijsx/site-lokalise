@@ -1,20 +1,16 @@
-@import "../../node_modules/normalize.css/normalize";
+@use "../../node_modules/normalize.css/normalize";
 
-@import "presets/skins";
-@import "presets/variables";
+@use "mixins";
 
-@import "mixins";
+@use "common/fonts";
+@use "common/typography";
+@use "common/classess";
 
-@import "common/fonts";
-@import "common/typography";
-@import "common/classess";
-
-@import "sections/header/header";
-@import "sections/header/header-menu";
-@import "sections/header/header-logo";
-@import "sections/header/header-navbar";
-@import "sections/header/header-actions";
-
-
-@import "sections/main/main";
-@import "sections/main/hero";
+@use "sections/header/header";
+@use "sections/header/header-menu";
+@use "sections/header/header-logo";
+@use "sections/header/header-navbar";
+@use "sections/header/header-actions";
+ 
+@use "sections/main/main";
+@use "sections/main/hero";

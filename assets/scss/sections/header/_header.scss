@@ -1,3 +1,5 @@
+@use "../../presets" as *;
+
 header {
   background-color: $color-bg-header;
   border-bottom: 1px solid $color-header-line;
