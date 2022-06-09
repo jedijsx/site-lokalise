@@ -2,11 +2,11 @@
 @use "../../mixins" as *;
 
 .header-menu {
-  padding-top: $gap-lg;
-  padding-bottom: $gap-lg;
   display: flex;
   align-items: center;
   height: 105px;
+  padding-top: $gap-lg;
+  padding-bottom: $gap-lg;
 
   @include xl-min {
     column-gap: 50px;
@@ -21,8 +21,8 @@
   }
 
   @include sm {
+    height: 68px;
     padding-top: $gap;
     padding-bottom: $gap;
-    height: 68px;
   }
 }

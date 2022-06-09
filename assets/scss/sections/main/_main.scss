@@ -2,13 +2,11 @@
 @use "../../mixins" as *;
 
 .main {
-  background-color: $color-bg-main;
-  // padding-top: 105px;
   position: relative;
   top: 105px;
+  background-color: $color-bg-main;
 
   @include sm {
-    // padding-top: 68px;
     top: 68px;
   }
 }

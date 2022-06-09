@@ -3,40 +3,41 @@
 
 .hero {
   display: grid;
-  grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
-  row-gap: 20px;
   align-items: center;
+  grid-template-areas: "ttl img""dsc img""act img""nts img";
+  row-gap: 20px;
 
   @include xl-min {
-    grid-template-columns: 550px 1fr;
     padding-top: 130px;
     padding-bottom: 160px;
+    grid-template-columns: 550px 1fr;
   }
 
   @include xl-lg {
-    grid-template-columns: 50% 1fr;
     padding-top: 80px;
     padding-bottom: 80px;
+    grid-template-columns: 50% 1fr;
   }
 
   @include lg {
-    grid-template-columns: 1fr;
-    grid-template-areas: "ttl" "dsc" "img" "act" "nts";
-    justify-items: center;
     padding-top: 56px;
     padding-bottom: 56px;
+    grid-template-areas: "ttl""dsc""img""act""nts";
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   @include sm {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: $padding-top-sm;
+    padding-bottom: $padding-bottom-sm;
   }
 
+
   &-title {
-    grid-area: ttl;
+    margin: 0;
     font-weight: 600;
     line-height: 1.08;
-    margin: 0;
+    grid-area: ttl;
 
     @include xl-min {
       font-size: 65px;
@@ -47,31 +48,32 @@
     }
 
     @include lg {
-      font-size: 40px;
       max-width: 600px;
       text-align: center;
+      font-size: 40px;
     }
   }
 
   &-description {
-    grid-area: dsc;
     padding-top: $gap-lg;
     padding-bottom: $gap-lg;
     line-height: 1.4;
+    grid-area: dsc;
 
     @include xl-min {
       font-size: 25px;
+      max-width: 470px;
     }
 
     @include xl {
+      max-width: 470px;
       font-size: 20px;
-      max-width: 400px;
     }
 
     @include lg {
-      font-size: 18px;
       max-width: 470px;
       text-align: center;
+      font-size: 18px;
     }
 
     @include sm {
@@ -81,9 +83,9 @@
   }
 
   &-actions {
-    grid-area: act;
     display: flex;
     column-gap: $gap-sm;
+    grid-area: act;
 
     @include sm {
       flex-direction: column;
@@ -106,10 +108,10 @@
   }
 
   &-image-container {
-    grid-area: img;
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-area: img;
   }
 
   &-image-item {
@@ -119,7 +121,7 @@
 
     @include lg {
       width: 50%;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
   }
 }

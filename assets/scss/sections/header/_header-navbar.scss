@@ -2,8 +2,8 @@
 @use "../../presets" as *;
 
 .header-menu-navbar {
-  flex-grow: 1;
   display: flex;
+  flex-grow: 1;
 
   @include xl-min {
     column-gap: 60px;
@@ -23,21 +23,19 @@
     }
   }
 
-  // Humburger menu
-
   &.active {
-    display: block;
     position: absolute;
     top: 0;
-    padding: 105px 20px 100px 20px;
-    background-color: $color-bg-main;
+    right: 0;
+    display: block;
     display: flex;
     flex-direction: column;
-    gap: $gap-lg;
     width: 324px;
-    right: 0;
-    text-align: right;
     height: 100vh;
-    box-shadow: 0 0 16px rgba($color-btn-dark, 0.25);    
+    padding: 105px 20px 100px 20px;
+    text-align: right;
+    background-color: $color-bg-main;
+    box-shadow: 0 0 16px rgba($color-btn-dark, 0.25);
+    gap: $gap-lg;
   }
 }
