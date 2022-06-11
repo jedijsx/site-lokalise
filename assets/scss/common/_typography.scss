@@ -20,3 +20,12 @@ a {
   text-decoration: none;
   color: $color-txt-primary;
 }
+
+.text-link {
+  text-decoration: underline;
+}
+
+.text-link:hover {
+  color: $color-btn-accent;
+  transition: 0.51s;
+}

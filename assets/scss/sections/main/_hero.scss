@@ -4,25 +4,25 @@
 .hero {
   display: grid;
   align-items: center;
-  grid-template-areas: "ttl img""dsc img""act img""nts img";
+  grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
   row-gap: 20px;
 
   @include xl-min {
     padding-top: 130px;
     padding-bottom: 160px;
-    grid-template-columns: 550px 1fr;
+    grid-template-columns: 560px 1fr;
   }
 
   @include xl-lg {
     padding-top: 80px;
     padding-bottom: 80px;
-    grid-template-columns: 50% 1fr;
+    grid-template-columns: 52% 1fr;
   }
 
   @include lg {
     padding-top: 56px;
     padding-bottom: 56px;
-    grid-template-areas: "ttl""dsc""img""act""nts";
+    grid-template-areas: "ttl" "dsc" "img" "act" "nts";
     grid-template-columns: 1fr;
     justify-items: center;
   }
@@ -31,7 +31,6 @@
     padding-top: $padding-top-sm;
     padding-bottom: $padding-bottom-sm;
   }
-
 
   &-title {
     margin: 0;
@@ -95,6 +94,10 @@
     &-btn {
       @include sm {
         min-width: 320px;
+      }
+
+      @include xs {
+        min-width: 260px;
       }
     }
   }

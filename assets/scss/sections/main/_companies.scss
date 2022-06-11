@@ -40,6 +40,10 @@
     padding-top: 70px;
     flex-wrap: wrap;
 
+    @include lg {
+      gap: 48px;
+    }
+
     @include sm {
       gap: $gap-lg;
       padding-top: $padding-top-sm;
