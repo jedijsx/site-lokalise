@@ -8,11 +8,10 @@
 
 @use "sections/header/header";
 @use "sections/header/header-menu";
-@use "sections/header/header-logo";
-@use "sections/header/header-navbar";
-@use "sections/header/header-actions";
 
 @use "sections/main/main";
 @use "sections/main/hero";
 @use "sections/main/companies";
-@use "sections/main/features";
+@use "sections/main/features/features";
+@use "sections/main/features/items";
+@use "sections/main/features/content";

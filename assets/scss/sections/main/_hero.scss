@@ -32,7 +32,7 @@
     padding-bottom: $padding-bottom-sm;
   }
 
-  &-title {
+  &__title {
     margin: 0;
     font-weight: 600;
     line-height: 1.08;
@@ -53,7 +53,7 @@
     }
   }
 
-  &-description {
+  &__description {
     padding-top: $gap-lg;
     padding-bottom: $gap-lg;
     line-height: 1.4;
@@ -81,7 +81,7 @@
     }
   }
 
-  &-actions {
+  &__actions {
     display: flex;
     column-gap: $gap-sm;
     grid-area: act;
@@ -90,19 +90,9 @@
       flex-direction: column;
       gap: $gap-sm;
     }
-
-    &-btn {
-      @include sm {
-        min-width: 320px;
-      }
-
-      @include xs {
-        min-width: 260px;
-      }
-    }
   }
 
-  &-notes {
+  &__notes {
     grid-area: nts;
 
     @include sm {
@@ -110,21 +100,22 @@
     }
   }
 
-  &-image-container {
+  &__image-container {
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: img;
   }
 
-  &-image-item {
+  &__image {
     @include lg-min {
       width: 100%;
     }
-
+  
     @include lg {
       width: 50%;
       margin-bottom: 20px;
     }
   }
 }
+

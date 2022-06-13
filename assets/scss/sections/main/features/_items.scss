@@ -1,0 +1,16 @@
+@use "../../../mixins" as *;
+@use "../../../presets/" as *;
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+
+  @include xl {
+    gap: 100px;
+  }
+
+  @include md {
+    gap: 80px;
+  }
+}

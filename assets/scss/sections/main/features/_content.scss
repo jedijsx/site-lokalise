@@ -1,0 +1,109 @@
+@use "../../../mixins" as *;
+@use "../../../presets/" as *;
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include lg {
+    flex-direction: column;
+    text-align: center;
+    gap: $gap-lg;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-lg;
+    flex-grow: 1;
+    flex-basis: 670px;
+    padding-right: 170px;
+
+    @include lg {
+      padding: 0 90px;
+      flex-basis: auto;
+      justify-content: center;
+      gap: $gap;
+    }
+
+    @include md {
+      padding: 0 40px;
+    }
+
+    @include sm {
+      padding: 0 10px;
+    }
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+
+    @include xl {
+      font-size: 40px;
+    }
+
+    @include lg {
+      font-size: 32px;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+
+    @include xl {
+      font-size: 16px;
+    }
+
+    @include lg {}
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+
+  &__link:hover {
+    color: $color-btn-accent;
+    transition: 0.32s;
+  }
+
+  &__action {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 670px;
+
+    @include lg {
+      flex-basis: auto;
+    }
+  }
+
+  &__image {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.content__left--reverse {
+  order: 2;
+  padding-left: 140px;
+  padding-right: 80px;
+
+  @include lg {
+    order: -1;
+    padding: 0 90px;
+  }
+}

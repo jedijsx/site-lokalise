@@ -16,28 +16,28 @@
     <div class="container">
       <div class="header-menu">
         <!-- Logo -->
-        <div class="header-menu-logo">
-          <img class="header-logo-image" src="./assets/img/logo.svg" alt="Lokalise logo ">
+        <div class="header-menu__logo">
+          <img src="./assets/img/logo.svg" alt="Lokalise logo ">
         </div>
         <!-- Navbar -->
-        <nav class="header-menu-navbar">
-          <a href="" class="header-menu-navbar-link">Product</a>
-          <a href="" class="header-menu-navbar-link">Features</a>
-          <a href="" class="header-menu-navbar-link">Pricing</a>
-          <a href="" class="header-menu-navbar-link">Case studies</a>
-          <a href="" class="header-menu-navbar-link">Resources</a>
+        <nav class="header-menu__navbar">
+          <a href="" class="header-menu__navbar-link">Product</a>
+          <a href="" class="header-menu__navbar-link">Features</a>
+          <a href="" class="header-menu__navbar-link">Pricing</a>
+          <a href="" class="header-menu__navbar-link">Case studies</a>
+          <a href="" class="header-menu__navbar-link">Resources</a>
         </nav>
         <!-- Actions -->
-        <div class="header-menu-actions">
-          <div class="header-menu-actions-hamburger">
-            <span class="header-menu-actions-hamburger-row"></span>
-            <span class="header-menu-actions-hamburger-row"></span>
-            <span class="header-menu-actions-hamburger-row"></span>
-            <span class="header-menu-actions-hamburger-row"></span>
+        <div class="header-menu__actions">
+          <div class="header-menu__hamburger">
+            <span class="header-menu__hamburger-row"></span>
+            <span class="header-menu__hamburger-row"></span>
+            <span class="header-menu__hamburger-row"></span>
+            <span class="header-menu__hamburger-row"></span>
           </div>
-          <div class="header-menu-actions-buttons">
-            <button type="button" class="header-menu-actions-buttons-btn btn-light">Log in</button>
-            <button type="button" class="header-menu-actions-buttons-btn btn-accent">Try it free</button>
+          <div class="header-menu__buttons">
+            <button type="button" class="btn btn--header btn--light">Log in</button>
+            <button type="button" class="btn btn--header btn--accent">Try it free</button>
           </div>
         </div>
       </div>
@@ -50,22 +50,22 @@
     <!-- Hero section -->
     <div class="container">
       <div class="hero">
-        <h1 class="hero-title">
+        <h1 class="hero__title">
           Accelerate localization from code to delivery
         </h1>
-        <div class="hero-description">
+        <div class="hero__description">
           A localization and translation management platform for agile teams.
           Embrace automation, workflow transparency, and fast project delivery.
         </div>
-        <div class="hero-actions">
-          <button type="button" class="hero-actions-btn btn-accent">Try it free</button>
-          <button type="button" class="hero-actions-btn btn-light">Book a demo</button>
+        <div class="hero__actions">
+          <button type="button" class="btn btn--accent btn--sm">Try it free</button>
+          <button type="button" class="btn btn--light btn--sm">Book a demo</button>
         </div>
-        <div class="hero-notes">
+        <div class="hero__notes">
           Try all features for 14 days · No credit card required
         </div>
-        <div class="hero-image-container">
-          <img src="./assets/img/hero-image.png" class="hero-image-item" alt="Lokalise hero image">
+        <div class="hero__image-container">
+          <img src="./assets/img/hero-image.png" class="hero__image" alt="Lokalise hero image">
         </div>
       </div>
     </div>
@@ -73,10 +73,10 @@
     <!-- Companies section -->
     <div class="companies">
       <div class="container">
-        <h2 class="companies-title">
+        <h2 class="companies__title">
           The preferred localization tool of 1500+ companies
         </h2>
-        <div class="companies-logotypes">
+        <div class="companies__logotypes">
           <a href="">
             <img src="./assets/img/companies/item1.svg" alt="specialized">
           </a>
@@ -102,72 +102,69 @@
     <!-- Features section -->
     <div class="features">
       <div class="container">
-        <div class="features-items">
+        <div class="items">
 
-          <!-- Item -->
-          <section class="features-items-content">
-            <!-- Content left: title. description, actions -->
-            <div class="features-items-content-left">
-              <h2 class="features-items-content-left-title">Control the localization process</h2>
-              <div class="features-items-content-left-description">Collaborate with your team in a single workspace. Add
-                and
-                assign <a href="" class="text-link">tasks</a>, track progress, and enjoy a
+          <article class="content">
+            <div class="content__left">
+              <h2 class="content__title">Control the localization process</h2>
+              <div class="content__description">Collaborate with your team in a single workspace. Add
+                and assign <a href="" class="content__link">tasks</a>, track progress, and enjoy a
                 seamless localization workflow where you know who is doing what and when.
               </div>
-              <a href="" class="features-items-content-left-action">Start now</a>
+              <a href="" class="content__action">Start now</a>
             </div>
-            <!-- Content right: image -->
-            <div class="features-items-content-right">
-              <img src="./assets/img/features/first.png" alt="Control the localization process"
-                class="features-items-content-right-image">
+            <div class="content__right">
+              <img src="./assets/img/features/first.png" alt="Control the localization process" class="content__image">
             </div>
-          </section>
+          </article>
 
-          <section class="features-items-content reverse">
-            <div class="features-items-content-left">
-              <h2 class="features-items-content-left-title">Shorten time to market</h2>
-              <div class="features-items-content-left-description">
-                Localize your product in parallel with the development cycle. Use the Adobe XD, Figma, and Sketch
-                plugins to start working on translations as soon as the product design is ready. No more idle waiting.
+          <article class="content">
+            <div class="content__left content__left--reverse">
+              <h2 class="content__title">Shorten time to market</h2>
+              <div class="content__description">Localize your product in parallel with the development cycle. Use the
+                <a href="" class="content__link">Adobe XD</a>, <a href="" class="content__link">Figma</a>, and <a
+                  href="" class="content__link">Sketch</a> plugins to start working on translations as soon as the
+                product design is
+                ready. No more idle waiting.
               </div>
-              <a href="" class="features-items-content-left-action">Start now</a>
+              <a href="" class="content__action">Start now</a>
             </div>
-            <div class="features-items-content-right">
-              <img src="./assets/img/features/second.png" alt="Control the localization process"
-                class="features-items-content-right-image">
+            <div class="content__right">
+              <img src="./assets/img/features/second.png" alt="Control the localization process" class="content__image">
             </div>
-          </section>
+          </article>
 
-          <section class="features-items-content">
-            <div class="features-items-content-left">
-              <h2 class="features-items-content-left-title">Ensure quality</h2>
-              <div class="features-items-content-left-description">
-                Use built-in tools — e.g. translation memory, machine translation, and QA checks — to enhance the
-                quality and cohesion of translations. Add product screenshots for context and use the in-context editors
-                for instant previews.
+          <article class="content">
+            <div class="content__left">
+              <h2 class="content__title">Ensure quality</h2>
+              <div class="content__description">Use built-in tools — e.g. <a href="" class="content__link">translation
+                  memory</a>, machine translation, and
+                <a href="" class="content__link">QA checks</a> — to enhance the quality and cohesion of translations.
+                Add product <a href="" class="content__link">screenshots</a> for context and
+                use the <a href="" class="content__link">in-context editors</a> for instant previews.
               </div>
-              <a href="" class="features-items-content-left-action">Start now</a>
+              <a href="" class="content__action">Start now</a>
             </div>
-            <div class="features-items-content-right">
-              <img src="./assets/img/features/third.png" alt="Control the localization process"
-                class="features-items-content-right-image">
+            <div class="content__right">
+              <img src="./assets/img/features/third.png" alt="Control the localization process" class="content__image">
             </div>
-          </section>
+          </article>
 
-          <section class="features-items-content reverse">
-            <div class="features-items-content-left">
-              <h2 class="features-items-content-left-title">Less work for developers</h2>
-              <div class="features-items-content-left-description">
-                Eliminate the hassle of localization and let developers get back to their main tasks. Save hours with
-                the powerful API, CLI, mobile SDKs, and integrations with GitHub, Bitbucket, JIRA, and more.
+          <article class="content">
+            <div class="content__left content__left--reverse">
+              <h2 class="content__title">Less work for developers</h2>
+              <div class="content__description">Eliminate the hassle of localization and let developers get back to
+                their main tasks. Save hours with the powerful <a href="" class="content__link">API</a>, <a href=""
+                  class="content__link">CLI</a>, <a href="" class="content__link">mobile SDKs</a>, and integrations with
+                  <a href="" class="content__link">GitHub</a>,
+                  <a href="" class="content__link">Bitbucket</a>, <a href="" class="content__link">JIRA</a>, and more.
               </div>
-              <a href="" class="features-items-content-left-action">Start now</a>
+              <a href="" class="content__action">Start now</a>
             </div>
-            <div class="features-items-content-right">
-              <img src="./assets/img/features/fourth.png" alt="Control the localization process"
-                class="features-items-content-right-image">
+            <div class="content__right">
+              <img src="./assets/img/features/fourth.png" alt="Control the localization process" class="content__image">
             </div>
-          </section>
+          </article>
 
         </div>
       </div>

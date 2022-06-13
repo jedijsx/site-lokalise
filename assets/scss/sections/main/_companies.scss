@@ -13,7 +13,7 @@
     padding-bottom: $padding-bottom-sm;
   }
 
-  &-title {
+  &__title {
     font-weight: 600;
     line-height: 1.2;
     margin: 0 auto;
@@ -32,7 +32,7 @@
     }
   }
 
-  &-logotypes {
+  &__logotypes {
     display: flex;
     justify-content: center;
     align-items: center;

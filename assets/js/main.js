@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	$('.header-menu-actions-hamburger').click(function(){
+	$('.header-menu__hamburger').click(function(){
 		$(this).toggleClass('open');
-		$('.header-menu-navbar').toggleClass('active')
-		$('.header-menu-actions-buttons').toggleClass('active')
+		$('.header-menu__navbar').toggleClass('active')
+		$('.header-menu__buttons').toggleClass('active')
 	});
 }); 
