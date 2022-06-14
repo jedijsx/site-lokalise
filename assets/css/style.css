@@ -656,7 +656,7 @@ header {
   padding-bottom: 150px;
 }
 
-.items {
+.features-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -749,12 +749,47 @@ header {
   padding-right: 80px;
 }
 
+.capabilities {
+  background-color: #fff8e4;
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+
+.capabilities-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 200px;
+}
+
+.entity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 24px;
+  -ms-flex-preferred-size: 330px;
+      flex-basis: 330px;
+}
+.entity__image {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
 @media (min-width: 992px) {
   .hero__image {
     width: 100%;
   }
 }
-
 @media (min-width: 1200px) {
   .header-menu {
     -webkit-column-gap: 50px;
@@ -782,7 +817,6 @@ header {
     font-size: 50px;
   }
 }
-
 @media (max-width: 1199.8px) {
   .header-menu {
     -webkit-column-gap: 30px;
@@ -798,7 +832,7 @@ header {
     max-width: 470px;
     font-size: 20px;
   }
-  .items {
+  .features-items {
     gap: 100px;
   }
   .content__title {
@@ -808,7 +842,6 @@ header {
     font-size: 16px;
   }
 }
-
 @media (max-width: 1199.8px) and (min-width: 992px) {
   .hero {
     padding-top: 80px;
@@ -822,7 +855,6 @@ header {
     font-size: 40px;
   }
 }
-
 @media (max-width: 991.8px) {
   .header-menu__navbar {
     display: none;
@@ -898,16 +930,14 @@ header {
     padding: 0 90px;
   }
 }
-
 @media (max-width: 767.8px) {
-  .items {
+  .features-items {
     gap: 80px;
   }
   .content__left {
     padding: 0 40px;
   }
 }
-
 @media (max-width: 575.8px) {
   .btn--sm {
     min-width: 320px;
@@ -953,7 +983,6 @@ header {
     padding: 0 10px;
   }
 }
-
 @media (max-width: 374.8px) {
   .btn--sm {
     min-width: 260px;

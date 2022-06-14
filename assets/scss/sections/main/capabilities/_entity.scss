@@ -1,0 +1,25 @@
+@use "../../../presets/" as *;
+@use "../../../mixins" as *;
+
+.entity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  flex-basis: 330px;
+
+  &__title {
+
+  }
+
+  &__description {
+
+  }
+
+  &__image {
+    order: -1;
+  }
+
+}

@@ -1,0 +1,8 @@
+@use "../../../presets/" as *;
+@use "../../../mixins" as *;
+
+.capabilities {
+  background-color: $color-bg-capabilities;
+  padding-top: 120px;
+  padding-bottom: 150px;
+}

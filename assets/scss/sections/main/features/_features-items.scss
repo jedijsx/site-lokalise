@@ -1,7 +1,7 @@
 @use "../../../mixins" as *;
 @use "../../../presets/" as *;
 
-.items {
+.features-items {
   display: flex;
   flex-direction: column;
   gap: 250px;
