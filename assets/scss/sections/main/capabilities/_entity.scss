@@ -8,14 +8,16 @@
   align-items: center;
   text-align: center;
   gap: 24px;
-  flex-basis: 330px;
 
   &__title {
-
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.4;
   }
 
   &__description {
-
+    font-size: 18px;
+    line-height: 1.39;
   }
 
   &__image {
