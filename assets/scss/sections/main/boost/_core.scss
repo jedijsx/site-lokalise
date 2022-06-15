@@ -1,0 +1,36 @@
+@use "../../../presets/" as *;
+@use "../../../mixins" as *;
+
+.core {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-lg;
+  flex-basis: 340px;
+  max-width: 50%;
+  flex-grow: 1;
+
+  @include lg {
+    max-width: 86%;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.33;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  &__link {
+    font-size: 20px;
+    line-height: 1.5;
+    text-decoration-line: underline;
+  }
+
+  &__image {
+    order: -1;
+  }
+}
