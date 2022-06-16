@@ -1,0 +1,8 @@
+@use "../../../mixins" as *;
+@use "../../../presets/" as *;
+
+.testimonial {
+  background-color: $color-bg-testimonial;
+  padding-top: 56px;
+  padding-bottom: 105px;
+}

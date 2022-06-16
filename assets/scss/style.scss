@@ -18,9 +18,14 @@
 @use "sections/main/features/content";
 
 @use "sections/main/capabilities/capabilities";
+@use "sections/main/capabilities/capabilities-header";
 @use "sections/main/capabilities/capabilities-entities";
 @use "sections/main/capabilities/entity";
 
 @use "sections/main/boost/boost";
 @use "sections/main/boost/boost-cores";
+@use "sections/main/boost/boost-header";
 @use "sections/main/boost/core";
+
+@use "sections/main/testimonial/testimonial";
+@use "sections/main/testimonial/author";

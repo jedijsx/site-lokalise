@@ -1,0 +1,40 @@
+@use "../../../mixins" as *;
+@use "../../../presets/" as *;
+
+.author {
+  display: grid;
+  align-items: center;
+  grid-template-areas: "ttx img" "nam img" "log img";
+  // row-gap: 10px;
+  column-gap: 80px;
+
+  &__text {
+    grid-area: ttx;
+    font-size: 30px;
+    line-height: 1.33;
+    padding-top: 20px;
+  }
+
+  &__name {
+    grid-area: nam;
+    font-size: 15px;
+    line-height: 1.67;
+    padding-top: 40px;
+  }
+
+  &__logo {
+    grid-area: log;
+  }
+
+  &__image {
+    grid-area: img;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__photo {
+    width: 100%;
+  }
+}

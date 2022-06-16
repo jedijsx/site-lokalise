@@ -4,16 +4,9 @@
 .boost {
   padding-top: 150px;
   padding-bottom: 180px;
-}
-
-.boost-header {
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 1.2;
-  margin-top: 0;
-  margin-bottom: 75px;
 
   @include lg {
-    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }

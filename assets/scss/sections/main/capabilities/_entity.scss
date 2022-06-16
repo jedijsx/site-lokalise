@@ -4,7 +4,7 @@
 .entity {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   gap: 24px;
@@ -13,6 +13,7 @@
     font-weight: 600;
     font-size: 25px;
     line-height: 1.4;
+    margin: 0;
   }
 
   &__description {
