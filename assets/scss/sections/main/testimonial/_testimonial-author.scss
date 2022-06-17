@@ -1,11 +1,10 @@
 @use "../../../mixins" as *;
 @use "../../../presets/" as *;
 
-.author {
+.testimonial-author {
   display: grid;
   align-items: center;
   grid-template-areas: "ttx img" "nam img" "log img";
-  // row-gap: 10px;
   column-gap: 80px;
 
   &__text {
@@ -13,6 +12,10 @@
     font-size: 30px;
     line-height: 1.33;
     padding-top: 20px;
+
+    @include sm {
+      font-size: 22px;
+    }
   }
 
   &__name {
@@ -20,6 +23,10 @@
     font-size: 15px;
     line-height: 1.67;
     padding-top: 40px;
+
+    @include lg {
+      padding-top: 0px;
+    }
   }
 
   &__logo {
@@ -32,9 +39,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 312px;
   }
 
   &__photo {
     width: 100%;
+  }
+
+  @include lg {
+    grid-template-areas: "ttx" "img" "nam" "log";
+    gap: $gap;
   }
 }

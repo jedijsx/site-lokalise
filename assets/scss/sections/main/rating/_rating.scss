@@ -1,0 +1,8 @@
+@use "../../../mixins" as *;
+@use "../../../presets/" as *;
+
+.rating {
+  background-color: $color-bg-rating;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}

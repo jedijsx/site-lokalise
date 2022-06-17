@@ -14,7 +14,7 @@
 @use "sections/main/companies";
 
 @use "sections/main/features/features";
-@use "sections/main/features/features-items";
+@use "sections/main/features/features-content";
 @use "sections/main/features/content";
 
 @use "sections/main/capabilities/capabilities";
@@ -28,4 +28,6 @@
 @use "sections/main/boost/core";
 
 @use "sections/main/testimonial/testimonial";
-@use "sections/main/testimonial/author";
+@use "sections/main/testimonial/testimonial-author";
+
+@use "sections/main/rating/rating"

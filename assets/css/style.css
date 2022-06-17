@@ -656,7 +656,7 @@ header {
   padding-bottom: 150px;
 }
 
-.features-items {
+.features-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,27 +694,27 @@ header {
       flex-basis: 670px;
   padding-right: 170px;
 }
-.content__title {
+.content__left-title {
   font-size: 50px;
   font-weight: 600;
   line-height: 1.2;
   margin: 0;
 }
-.content__description {
+.content__left-description {
   font-size: 20px;
   line-height: 1.5;
   margin: 0;
 }
-.content__link {
+.content__left-link {
   text-decoration: underline;
 }
-.content__link:hover {
+.content__left-link:hover {
   color: #ff6336;
   -webkit-transition: 0.32s;
   -o-transition: 0.32s;
   transition: 0.32s;
 }
-.content__action {
+.content__left-action {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
@@ -736,12 +736,12 @@ header {
   -ms-flex-preferred-size: 670px;
       flex-basis: 670px;
 }
-.content__image {
+.content__right-image {
   margin: 0;
   width: 100%;
 }
 
-.content__left--reverse {
+.reverse {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -874,7 +874,7 @@ header {
   padding-bottom: 105px;
 }
 
-.author {
+.testimonial-author {
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -884,22 +884,22 @@ header {
      -moz-column-gap: 80px;
           column-gap: 80px;
 }
-.author__text {
+.testimonial-author__text {
   grid-area: ttx;
   font-size: 30px;
   line-height: 1.33;
   padding-top: 20px;
 }
-.author__name {
+.testimonial-author__name {
   grid-area: nam;
   font-size: 15px;
   line-height: 1.67;
   padding-top: 40px;
 }
-.author__logo {
+.testimonial-author__logo {
   grid-area: log;
 }
-.author__image {
+.testimonial-author__image {
   grid-area: img;
   margin: 0;
   display: -webkit-box;
@@ -911,15 +911,24 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 312px;
 }
-.author__photo {
+.testimonial-author__photo {
   width: 100%;
 }
+
+.rating {
+  background-color: #dabc98;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 @media (min-width: 992px) {
   .hero__image {
     width: 100%;
   }
 }
+
 @media (min-width: 1200px) {
   .header-menu {
     -webkit-column-gap: 50px;
@@ -947,6 +956,7 @@ header {
     font-size: 50px;
   }
 }
+
 @media (max-width: 1199.8px) {
   .header-menu {
     -webkit-column-gap: 30px;
@@ -965,13 +975,13 @@ header {
   .companies__title {
     font-size: 40px;
   }
-  .features-items {
+  .features-content {
     gap: 100px;
   }
-  .content__title {
+  .content__left-title {
     font-size: 40px;
   }
-  .content__description {
+  .content__left-description {
     font-size: 16px;
   }
   .capabilities-header {
@@ -986,6 +996,7 @@ header {
     font-size: 40px;
   }
 }
+
 @media (max-width: 1199.8px) and (min-width: 992px) {
   .hero {
     padding-top: 80px;
@@ -996,6 +1007,7 @@ header {
     font-size: 56px;
   }
 }
+
 @media (max-width: 991.8px) {
   .header-menu__navbar {
     display: none;
@@ -1057,14 +1069,14 @@ header {
             justify-content: center;
     gap: 20px;
   }
-  .content__title {
+  .content__left-title {
     font-size: 32px;
   }
   .content__right {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
-  .content__left--reverse {
+  .reverse {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -1095,9 +1107,17 @@ header {
   .core {
     max-width: 86%;
   }
+  .testimonial-author__name {
+    padding-top: 0px;
+  }
+  .testimonial-author {
+    grid-template-areas: "ttx" "img" "nam" "log";
+    gap: 20px;
+  }
 }
+
 @media (max-width: 767.8px) {
-  .features-items {
+  .features-content {
     gap: 80px;
   }
   .content__left {
@@ -1117,6 +1137,7 @@ header {
     padding-right: 80px;
   }
 }
+
 @media (max-width: 575.8px) {
   .btn--sm {
     min-width: 320px;
@@ -1165,7 +1186,14 @@ header {
     padding-left: 40px;
     padding-right: 40px;
   }
+  .testimonial {
+    padding-bottom: 56px;
+  }
+  .testimonial-author__text {
+    font-size: 22px;
+  }
 }
+
 @media (max-width: 374.8px) {
   .btn--sm {
     min-width: 260px;
