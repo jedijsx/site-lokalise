@@ -1,0 +1,40 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.footer-sub {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
+
+
+  &__left {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+
+    &-logo {
+      width: 90px;
+    }
+
+    &-description {
+      font-size: 12px;
+      line-height: 1.25;
+      max-width: 340px;
+    }
+  }
+
+  &__right {
+    padding-right: 64px;
+
+    &-copy {
+      font-size: 12px;
+      line-height: 1.25;
+    }
+    &-policy {
+      font-size: 12px;
+      line-height: 1.25;
+    }
+  }
+}

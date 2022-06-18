@@ -1,0 +1,24 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.footer {
+  padding-top: 90px;
+  padding-bottom: 48px;
+  position: relative;
+  top: 105px;
+  background-color: $color-bg-footer;
+
+  @include sm {
+    padding-top: 48px;
+  }
+
+  @include sm {
+    top: 68px;
+  }
+}
+
+.divider {
+  height: 1px;
+  background-color: $color-txt-primary;
+  width: 100%;
+}

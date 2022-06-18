@@ -4,4 +4,9 @@
 .features {
   padding-top: 90px;
   padding-bottom: 150px;
+
+  @include sm {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }

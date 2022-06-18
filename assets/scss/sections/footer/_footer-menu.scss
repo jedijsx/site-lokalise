@@ -1,0 +1,32 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.footer-menu {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+
+  @include sm {
+    gap: 48px;
+  }
+
+  &__item {
+
+    &-title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &-link {
+      font-size: 15px;
+      line-height: 1;
+    }
+  }
+}

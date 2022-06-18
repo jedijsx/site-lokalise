@@ -1,0 +1,36 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.footer-case {
+
+  &__title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 1.25;
+  }
+
+  &__image {
+    display: flex;
+    height: 300px;
+    margin-top: 28px;
+    margin-bottom: 32px;
+  }
+
+  &__picture {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 300px;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
