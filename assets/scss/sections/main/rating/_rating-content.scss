@@ -1,0 +1,99 @@
+@use "../../../mixins" as *;
+@use "../../../presets/" as *;
+
+.rating-content {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+
+  @include xl {
+    gap: 20px;
+  }
+
+  @include lg {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  &__left {
+    display: flex;
+    gap: 67px;
+    align-items: center;
+
+    @include xl {
+      gap: 20px;
+    }
+
+    @include sm {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-image {
+      height: 154px;
+      width: 176px;
+    }
+
+    &-picture {
+      width: 100%;
+    }
+
+    &-description {
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 1.43;
+      flex-basis: 461px;
+
+      @include sm {
+        flex-basis: 100px;
+      }
+
+      @include lg {
+        font-size: 28px;
+      }
+    }
+  }
+
+  &__divider {
+    height: 168px;
+    width: 1px;
+    background-color: $color-txt-primary;
+
+    @include lg {
+      height: 1px;
+      width: 100%;
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 70px;
+
+    @include sm {
+      gap: 30px;
+    }
+
+    @include xs {
+      flex-direction: column;
+    }
+
+    &-company {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &-logo {
+      display: flex;
+    }
+
+    &-stars {
+      display: flex;
+    }
+
+    &-title {
+      text-transform: uppercase;
+    }
+  }
+}

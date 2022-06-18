@@ -30,4 +30,7 @@
 @use "sections/main/testimonial/testimonial";
 @use "sections/main/testimonial/testimonial-author";
 
-@use "sections/main/rating/rating"
+@use "sections/main/rating/rating";
+@use "sections/main/rating/rating-content";
+
+@use "sections/main/integration";

@@ -1,0 +1,53 @@
+@use "../../mixins" as *;
+@use "../../presets/" as *;
+
+.integration {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  text-align: center;
+
+  @include xl {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 1.15;
+    margin: 0 auto 15px auto;
+    max-width: 790px;
+
+    @include xl {
+      font-size: 56px;
+    }
+
+    @include lg {
+      font-size: 40px;
+    }
+  }
+
+  &__description {
+    font-size: 25px;
+    line-height: 1.2;
+    margin: 0 auto 25px auto;
+    max-width: 540px;
+
+    @include xl {
+      font-size: 20px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    max-height: 445px;
+    margin-bottom: 32px
+  }
+  
+  &__picture {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+}
