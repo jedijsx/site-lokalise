@@ -1,0 +1,40 @@
+@use "../../mixins" as *;
+@use "../../presets/" as *;
+
+.localization {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  text-align: center;
+  background-color: $color-bg-localization;
+
+  @include lg {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 1.15;
+    max-width: 784px;
+    margin: 0 auto 30px auto;
+
+    @include xl {
+      font-size: 56px;
+    }
+
+    @include lg {
+      font-size: 40px;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 auto 54px auto;
+
+    @include xl {
+      font-size: 18px;
+    }
+  }
+}

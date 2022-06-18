@@ -35,6 +35,12 @@
   background-color: $color-btn-accent;
 }
 
+.btn--dark {
+  color: $color-txt-secondary;
+  border: none;
+  background-color: $color-btn-dark;
+}
+
 .btn--sm {
   @include sm {
     min-width: 320px;
